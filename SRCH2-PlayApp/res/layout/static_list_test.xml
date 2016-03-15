@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main_activity_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFEFEF"
+    tools:context=".MainActivity" >
+    
+    <ScrollView 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" >
+        
+		<com.srch2.viewable.list.StaticListView
+		    android:id="@+id/slv_results"
+		    android:orientation="vertical"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" />  
+
+	</ScrollView>
+	
+</LinearLayout>

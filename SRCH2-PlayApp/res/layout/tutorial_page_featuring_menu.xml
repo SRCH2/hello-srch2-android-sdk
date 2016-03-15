@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tutorial_bevel"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#131B21"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="2dp" >
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:contentDescription="SRCH2 Icon"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher" />
+
+            <EditText
+                android:id="@+id/et_search_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FEFEFE"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp" />
+
+            <ImageButton
+                android:id="@+id/ib_menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:contentDescription="Toggle Menu Button"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow_up" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#131B21"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp" >
+
+                <LinearLayout
+                    android:id="@+id/ll_tutorial_category_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_tutorial_tvFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:paddingTop="3dp"
+                android:text="Find your"
+                android:textSize="@dimen/tutorial_title_size" />
+
+            <LinearLayout
+                android:id="@+id/ll_tutorial_featuring_categories_container_portrait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tutorial_tvFour"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="8dp"
+                    android:text="Contacts, SMS,"
+                    android:textSize="@dimen/tutorial_subtitle_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="3dp"
+                    android:text="Calendar, Installed Apps,"
+                    android:textSize="@dimen/tutorial_subtitle_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="3dp"
+                    android:text="Music, Video,"
+                    android:textSize="@dimen/tutorial_subtitle_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="3dp"
+                    android:text="Images, and Web."
+                    android:textSize="@dimen/tutorial_subtitle_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tutorial_featuring_categories_container_landscape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tutorial_tvFour"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="8dp"
+                    android:text="Contacts, SMS, Calendar, Installed Apps,"
+                    android:textSize="@dimen/tutorial_subtitle_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="3dp"
+                    android:text="Music, Video, Images, and Web."
+                    android:textSize="@dimen/tutorial_subtitle_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

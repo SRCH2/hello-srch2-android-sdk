@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+ 	android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+    <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+ 			android:background="@drawable/tutorial_bevel"
+            android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <ImageView
+            android:padding="10dp"
+            android:id="@+id/iv_tutorial_welcome"
+            android:src="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_centerHorizontal="true"
+        	   />
+        
+        <LinearLayout
+            android:layout_below="@+id/iv_tutorial_welcome"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/ll_welcome_to_srch2"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+			    android:id="@+id/tv_tutorial_tvOne"
+			   	android:textSize="@dimen/tutorial_title_size"
+			    android:text="Welcome to SRCH2,"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+	        <TextView
+			    android:id="@+id/tv_tutorial_tvThree"
+			    android:paddingTop="8dp"
+			    android:textSize="@dimen/tutorial_subtitle_size"
+			    android:text="your personal search app."
+			    android:gravity="center_horizontal"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        
+        <ImageView
+            android:id="@+id/iv_tutorial_swipe_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitCenter"
+            android:alpha=".8"
+            android:src="@drawable/tutorial_hint_swipe" />
+        
+    </RelativeLayout>
+
+    
+</LinearLayout>
+</LinearLayout>

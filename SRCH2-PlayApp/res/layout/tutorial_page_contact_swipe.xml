@@ -1,0 +1,242 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+ 	android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+    <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+ 			android:background="@drawable/tutorial_bevel"
+            android:orientation="vertical" >
+            
+    <LinearLayout
+        android:background="#131B21"
+	    android:layout_height="40dp"
+	    android:paddingBottom="3dp"
+	    android:paddingTop="2dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" >
+    
+        <ImageView
+		    android:id="@+id/iv_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"	
+	    	android:layout_gravity="center"
+	    	android:scaleType="fitCenter" 
+	    	android:focusable="false"
+	    	android:focusableInTouchMode="false"
+	    	android:contentDescription="SRCH2 Icon"
+	    	android:src="@drawable/ic_launcher" />
+
+	    <EditText
+	        android:background="#FEFEFE"
+	        android:imeOptions="flagNoFullscreen"
+	        android:id="@+id/et_search_input"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="5dp"
+	        android:layout_width="0dp"
+	        android:gravity="center_vertical"
+	        android:layout_weight="1"
+	        android:focusable="false"
+	        android:focusableInTouchMode="false"
+	        android:inputType="textPersonName" />
+        
+		<ImageButton 
+		    android:id="@+id/ib_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"	
+	    	android:layout_gravity="center"
+	    	android:focusable="false"
+	    	android:focusableInTouchMode="false"
+		    android:background="#00000000"
+		    android:padding="5dp"
+		    android:scaleType="fitCenter"
+		    android:contentDescription="Toggle Menu Button"
+		    android:src="@drawable/arrow_icon" />		    
+	    
+	</LinearLayout>  
+	
+<RelativeLayout
+    android:id="@+id/rl_row_root"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    tools:context=".MainActivity" >
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:id="@+id/rl_row_hint_container">
+		    
+		<ImageView 
+		    android:id="@+id/iv_row_right_hint"
+		    android:layout_alignParentRight="true"
+		    android:scaleType="centerInside"
+			android:src="@drawable/action_call_icon" 
+		    android:gravity="center_vertical"
+		    android:layout_height="match_parent"
+		    android:layout_width="wrap_content" />   
+		    
+		<ImageView 
+		    android:id="@+id/iv_row_left_hint"
+		    android:src="@drawable/action_sms_icon"
+		    android:layout_alignParentLeft="true"
+		   	android:scaleType="centerInside"
+		    android:gravity="center_vertical"
+		    android:layout_height="match_parent"
+		    android:layout_width="wrap_content" />	    
+	</RelativeLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/ll_row_content_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:background="#EFEFEF"
+	    android:orientation="horizontal"
+	    tools:context=".MainActivity" >
+
+		    <View
+		           android:focusable="false"
+		        android:id="@+id/v_row_colorCodeIndicator"
+		        android:background="@color/row_indicator_contacts"
+		        android:layout_width="7dp"
+		        android:layout_height="match_parent" />
+		    
+		    <ImageView
+		           android:focusable="false"
+		        android:id="@+id/iv_row_icon"
+		    	android:layout_width="40dp"
+		    	android:layout_height="40dp"
+		    	android:contentDescription="Result Icon"
+		    	android:src="@drawable/tutorial_contact"
+		    	android:scaleType="fitCenter"
+		    	android:adjustViewBounds="true" />
+		    
+		    <TextView 
+		           android:focusable="false"
+		        android:id="@+id/tv_row_title"
+		        android:layout_marginLeft="7dp"
+		        style="@android:style/TextAppearance.Medium"
+		        android:layout_gravity="center_vertical"
+		        android:gravity="center_vertical"
+		        android:layout_height="match_parent"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:maxLines="1" />
+		    
+	
+			<ImageView
+		   android:focusable="false"
+		        android:id="@+id/iv_row_special_button_1"
+		    	android:scaleType="centerInside"
+				android:src="@drawable/action_call_icon" 
+		    	android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:layout_gravity="center_vertical" />	  
+				
+		    <View
+		        android:layout_height="match_parent"
+		        android:layout_width="1dp" />
+		    
+		    <ImageView
+		    android:focusable="false"
+		        android:id="@+id/iv_row_special_button_2"
+		    	android:scaleType="centerInside"
+				android:src="@drawable/action_sms_icon"
+		    	android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:layout_gravity="center_vertical" />	  
+				
+		    <View
+		        android:layout_height="match_parent"
+		        android:layout_width="1dp" />	    
+		        
+		    <ImageView
+		    
+		    android:focusable="false"
+		        android:id="@+id/iv_row_special_button_3"
+		    	android:scaleType="centerInside"
+				android:src="@drawable/action_mail_icon"
+		    	android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:layout_gravity="center_vertical" />	  
+				
+		    <View
+		        android:layout_height="match_parent"
+		        android:layout_width="1dp" />	    	
+	</LinearLayout>
+
+</RelativeLayout>
+
+        
+    
+	    
+
+    <RelativeLayout
+        android:id="@+id/rl_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <TextView
+		    android:id="@+id/tv_tutorial_tvOne"
+		        android:textSize="@dimen/tutorial_title_size"
+		    android:text="Swipe a contact:"
+		    android:layout_centerInParent="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" />
+
+	  	
+
+        <TextView
+		    android:id="@+id/tv_tutorial_tvTwo"
+		    android:paddingTop="8dp"
+		    android:gravity="center_horizontal"
+		    android:layout_below="@+id/tv_tutorial_tvOne"
+		        android:textSize="@dimen/tutorial_subtitle_size" 
+		    android:text="right to text"
+		    android:layout_centerInParent="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" />
+        
+                <TextView
+		    android:id="@+id/tv_tutorial_tvThree"
+		    android:paddingTop="4dp"
+		    android:gravity="center_horizontal"
+		    android:layout_below="@+id/tv_tutorial_tvTwo"
+		     android:textSize="@dimen/tutorial_subtitle_size"
+		    android:text="and left to call."
+		    android:layout_centerInParent="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/tv_tutorial_tvOne"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal"
+                    android:paddingTop="12dp" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/arrow_left" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:paddingRight="20dp"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/arrow_right" />
+                </LinearLayout>
+                
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
